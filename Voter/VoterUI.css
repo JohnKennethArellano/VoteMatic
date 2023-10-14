@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Quicksand&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body::-webkit-scrollbar
+{
+    display:none;
+
+}
+
+header{
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    background-color: #2D3535;   
+}
+header img{
+    position: absolute;
+    width: 70px;
+    left: 100px;
+}
+
+header .profile{
+    position: absolute;
+    right: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 80%;
+    padding: 5px 5px 5px 55px;
+    border-radius: 4px;
+    border:solid 1px gray;
+}
+header .profile img {
+width: 45px;
+height: 45px;
+left: 10px;
+border-radius: 4px;
+}
+
+header .profile .text{
+    width: fit-content;
+    padding: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: 14px;
+}
+header button{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 55px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+}
+header button i{
+    font-size: 25px;
+    margin-left: 4px;
+}
+header button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80%;
+    font-size: 15px;
+    margin-left: 4px;
+}
+section{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    height: 100px;
+    background-color: rgb(224, 54, 54);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+.note #text{
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+.note span {
+    padding-left: 60px;
+}
+.holder{
+
+    width: 700px;
+    height: 500px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #2D3535;
+    color: white;
+}
+.holder form{
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 28px;
+}
+.fcontrol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-top: 25px;
+}
+.fcontroltext{
+    display: flex;
+    margin-top: 5px;
+    width: 350px;
+}
+.fcontrol-input{
+    margin-top: 5px;
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    outline: none;
+    border: solid rgb(211, 211, 211) 2px;
+    border-width: 0 0 2px 0; 
+    background-color: transparent;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.errorMes{
+    opacity: 0;
+    color: rgb(253, 80, 80);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.fcontrol.error .fcontrol-input{
+    animation: error 0.5s;
+    border-color: rgb(253, 80, 80);
+}
+
+.fcontrol.error .errorMes{
+    opacity: 1;
+}
+.fcontrol.success .fcontrol-input{
+    border-color:rgb(29, 199, 29);
+}
+
+.holder button {
+    margin: 30px auto 10px;
+    width: 70%;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.swal2-text,.swal2-title,.swal2-popup{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    color: black;
+}
+.swal2-icon--success{
+    color: green;
+}
+.swal-icon--success::before,
+.swal-icon--success::after,
+.swal-icon--success_hide-corners{
+    background: none !important;
+}
+.swal-button{
+    padding: 10px 19px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+.swal-button:hover{
+    color: white;
+}
+.swal-button:focus{
+    box-shadow: none;
+}
+.swal-title{
+    font-size: 18px;
+}
+
+.infohold{
+    width: 700px;
+    height: 500px;
+    margin: auto;
+}
+
+.candidates{
+    width: 800px;
+    height: 700px;
+    margin-top: 190px;
+}
+.candidates form{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+    border-radius: 4px;
+    margin: 10px 0 2px;
+    border: solid 1px gray;
+    padding: 10px 0;
+}
+.position{
+    font-size: 25px;
+    font-weight: 600;
+}
+.maxvote{
+    font-size: 18px;
+}
+.infoHolder{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 5px;
+    height: 150px;
+    border: solid 1px rgba(128, 128, 128, 0.24);
+    margin-bottom: 2px;
+}
+.infoHolder img{
+    margin-left: 20px;
+    width: 135px;
+    height: 140px;
+    border: solid 1px rgba(0, 0, 0, 0.24);
+}
+.nameHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.motto{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.partylist{
+    width: 100%;
+    height: 100%;
+}
+.p{
+    font-size: 16px;
+}
+
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 110px;
+    height: 100%;
+}
+.checkboxLabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1a1a1;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+}
+.submitVote[type="checkbox"]:checked + .checkboxLabel,.checkboxLabel:hover{
+    background-color: #28BF5E;
+    box-shadow: none;
+}
+.btnhod{
+    background-color: #28BF5E;
+    width: 100%;
+    margin-top: 30px;
+}
+.btnHolder{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnHolder #vote{
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+    background-color: #28BF5E;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@keyframes error{
+    25%{transform: translateX(-4px);}
+    50%{transform: translateX(4px);}
+    75%{transform: translateX(-4px);}
+}
